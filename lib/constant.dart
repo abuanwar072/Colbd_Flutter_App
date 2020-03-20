@@ -44,3 +44,4 @@ const kGradientButtonColorPeach = LinearGradient(
 const kBackgroundColor = Color(0xFFF3F6FD);
 const kTextColor = Color(0xFF313862);
 const kWhiteColor = Color(0xFFFFFFFF);
+const kGeayTextColor = Color(0xFF70757B);
