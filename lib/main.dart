@@ -1,5 +1,5 @@
 import 'package:colbd_app/constant.dart';
-import 'package:colbd_app/widgets/button.dart';
+import 'package:colbd_app/widgets/buttons.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -56,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
               press: () {},
               text: "Sign In",
             ),
+            GradientIconButton(press: () {}, text: "Next"),
             Text(
               'You have pushed the button this many times:',
             ),
@@ -74,4 +75,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
