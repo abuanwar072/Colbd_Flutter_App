@@ -2,6 +2,7 @@ import 'package:colbd_app/constant.dart';
 import 'package:colbd_app/ui/sizing_information.dart';
 import 'package:colbd_app/ui/ui_utils.dart';
 import 'package:colbd_app/widgets/buttons.dart';
+import 'package:colbd_app/widgets/progress_Indicator.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -67,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 10,
               ),
-              ProgressIndicator(),
+              MyProgressIndicator(),
               SizedBox(
                 height: 10,
               ),
@@ -87,32 +88,6 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}
-
-class ProgressIndicator extends StatelessWidget {
-  final double done;
-
-  const ProgressIndicator({Key key, this.done = 1.0}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    var mediaQuery = MediaQuery.of(context);
-    return LayoutBuilder(
-      builder: (context, boxSizing) {
-        var sizingInformation = SizingInformation(
-          orientation: mediaQuery.orientation,
-          deviceType: getDeviceType(mediaQuery),
-          screenSize: mediaQuery.size,
-          localWidgetSize: Size(boxSizing.maxWidth, boxSizing.maxHeight),
-        );
-        return Container(
-          height: 10,
-          width: sizingInformation.localWidgetSize.width * done,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10), color: kBlueColor),
-        );
-      },
     );
   }
 }
