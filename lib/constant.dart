@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 const kSecondaryButtonColor = Color(0xFFE0E2E9);
 const kDefaultButtonColor = LinearGradient(
-  begin: Alignment.topRight,
-  end: Alignment.bottomLeft,
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
   colors: [
-    Color(0xFF3E58F7),
     Color(0xFF427DFB),
+    Color(0xFF3E58F7),
   ],
 );
 const kGradientButtonColorBlack = LinearGradient(

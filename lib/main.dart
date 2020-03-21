@@ -2,6 +2,7 @@ import 'package:colbd_app/constant.dart';
 import 'package:colbd_app/ui/sizing_information.dart';
 import 'package:colbd_app/ui/ui_utils.dart';
 import 'package:colbd_app/widgets/buttons.dart';
+import 'package:colbd_app/widgets/package_info_car.dart';
 import 'package:colbd_app/widgets/progress_Indicator.dart';
 import 'package:flutter/material.dart';
 
@@ -71,6 +72,12 @@ class _MyHomePageState extends State<MyHomePage> {
               MyProgressIndicator(),
               SizedBox(
                 height: 10,
+              ),
+              PackageInfoCard(
+                packageName: "Test Package",
+                press: () {},
+                price: 950,
+                speed: 30,
               ),
               Text(
                 'You have pushed the button this many times:',

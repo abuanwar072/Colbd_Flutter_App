@@ -1,4 +1,6 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/ui/sizing_information.dart';
+import 'package:colbd_app/ui/ui_utils.dart';
 import 'package:flutter/material.dart';
 
 class DefaultButton extends StatelessWidget {
@@ -42,30 +44,42 @@ class DefaultButton extends StatelessWidget {
 class SecondaryButton extends StatelessWidget {
   final String text;
   final Function press;
+  final double width;
 
   const SecondaryButton({
     @required this.press,
     @required this.text,
+    this.width = .6,
     Key key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width * .6,
-      child: FlatButton(
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-        onPressed: press,
-        color: kSecondaryButtonColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+    var mediaQuery = MediaQuery.of(context);
+    return LayoutBuilder(builder: (context, boxSizing) {
+      var sizingInformation = SizingInformation(
+        orientation: mediaQuery.orientation,
+        deviceType: getDeviceType(mediaQuery),
+        screenSize: mediaQuery.size,
+        localWidgetSize: Size(boxSizing.maxWidth, boxSizing.maxHeight),
+      );
+      return Container(
+        width: sizingInformation.localWidgetSize.width * width,
+        child: FlatButton(
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          onPressed: press,
+          color: kSecondaryButtonColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Text(
+            text.toUpperCase(),
+            style:
+                Theme.of(context).textTheme.button.copyWith(color: kTextColor),
+          ),
         ),
-        child: Text(
-          text.toUpperCase(),
-          style: Theme.of(context).textTheme.button.copyWith(color: kTextColor),
-        ),
-      ),
-    );
+      );
+    });
   }
 }
 
