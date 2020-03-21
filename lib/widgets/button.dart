@@ -37,3 +37,34 @@ class DefaultButton extends StatelessWidget {
     );
   }
 }
+
+// Secondary Button
+class SecondaryButton extends StatelessWidget {
+  final String text;
+  final Function press;
+
+  const SecondaryButton({
+    @required this.press,
+    @required this.text,
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: MediaQuery.of(context).size.width * .6,
+      child: FlatButton(
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        onPressed: press,
+        color: kSecondaryButtonColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Text(
+          text.toUpperCase(),
+          style: Theme.of(context).textTheme.button.copyWith(color: kTextColor),
+        ),
+      ),
+    );
+  }
+}

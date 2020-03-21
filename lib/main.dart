@@ -49,6 +49,13 @@ class _MyHomePageState extends State<MyHomePage> {
               press: () {},
               text: "Sign Up",
             ),
+            SizedBox(
+              height: 10,
+            ),
+            SecondaryButton(
+              press: () {},
+              text: "Sign In",
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
@@ -67,3 +74,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
