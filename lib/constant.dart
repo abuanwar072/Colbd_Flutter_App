@@ -5,8 +5,8 @@ const kDefaultButtonColor = LinearGradient(
   begin: Alignment.topRight,
   end: Alignment.bottomLeft,
   colors: [
-    Color(0xFF427DFB),
     Color(0xFF3E58F7),
+    Color(0xFF427DFB),
   ],
 );
 const kGradientButtonColorBlack = LinearGradient(
@@ -41,7 +41,34 @@ const kGradientButtonColorPeach = LinearGradient(
     Color(0xFFFAD0C4),
   ],
 );
-const kBackgroundColor = Color(0xFFF3F6FD);
-const kTextColor = Color(0xFF313862);
-const kWhiteColor = Color(0xFFFFFFFF);
-const kGeayTextColor = Color(0xFF70757B);
+const Color kBackgroundColor = Color(0xFFF3F6FD);
+const Color kTextColor = Color(0xFF313862);
+const Color kWhiteColor = Color(0xFFFFFFFF);
+const Color kBlueColor = Color(0xFF427DFB);
+const Color kGeayTextColor = Color(0xFF70757B);
+
+// My themeData
+
+final ThemeData whiteTheme = ThemeData(
+  scaffoldBackgroundColor: kBackgroundColor,
+  accentColor: kBlueColor,
+  textTheme: TextTheme(
+    button: TextStyle(
+      fontWeight: FontWeight.bold,
+      color: kWhiteColor,
+    ),
+  ),
+  appBarTheme: AppBarTheme(
+    color: kBackgroundColor,
+    brightness: Brightness.light,
+    textTheme: TextTheme(
+      title: TextStyle(
+        color: kTextColor,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+  ),
+  fontFamily: "Nunito",
+  // primarySwatch: Colors.blue,
+);
