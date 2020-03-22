@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:colbd_app/model/welcome.dart';
+import 'package:colbd_app/screens/login_screen.dart';
 import 'package:colbd_app/widgets/buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -82,7 +83,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               padding: EdgeInsets.only(top: 10, bottom: 20),
               child: Column(
                 children: <Widget>[
-                  DefaultButton(press: () {}, text: "Sign Up with colid"),
+                  DefaultButton(
+                      press: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return LoginScreenGetId();
+                        }));
+                      },
+                      text: "Sign Up with colid"),
                   SizedBox(
                     height: 10,
                   ),

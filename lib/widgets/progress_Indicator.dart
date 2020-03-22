@@ -19,10 +19,27 @@ class MyProgressIndicator extends StatelessWidget {
           localWidgetSize: Size(boxSizing.maxWidth, boxSizing.maxHeight),
         );
         return Container(
-          height: 10,
-          width: sizingInformation.localWidgetSize.width * done,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10), color: kBlueColor),
+          height: 8,
+          child: Stack(
+            children: <Widget>[
+              Container(
+                width: sizingInformation.localWidgetSize.width,
+                height: 8,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: kWhiteColor,
+                ),
+              ),
+              Container(
+                height: 8,
+                width: sizingInformation.localWidgetSize.width * done,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    // color: kBlueColor,
+                    gradient: kDefaultButtonColor),
+              ),
+            ],
+          ),
         );
       },
     );

@@ -63,6 +63,7 @@ final ThemeData whiteTheme = ThemeData(
     ),
   ),
   appBarTheme: AppBarTheme(
+    iconTheme: IconThemeData(color: kTextColor),
     color: kBackgroundColor,
     brightness: Brightness.light,
     textTheme: TextTheme(
