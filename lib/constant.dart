@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+const String kAccessAccountSvg = "asstes/images/access_account.svg";
+const String kOnlineMessagingSvg = "asstes/images/online_messaging.svg";
+const String kOnlinePaymentSvg = "asstes/images/online_payments.svg";
+
 const kSecondaryButtonColor = Color(0xFFE0E2E9);
 const kDefaultButtonColor = LinearGradient(
   begin: Alignment.topLeft,

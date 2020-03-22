@@ -1,4 +1,5 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/screens/welcome_screen.dart';
 import 'package:colbd_app/ui/sizing_information.dart';
 import 'package:colbd_app/ui/ui_utils.dart';
 import 'package:colbd_app/widgets/buttons.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'COLBD',
       debugShowCheckedModeBanner: false,
       theme: whiteTheme,
-      home: MyHomePage(title: 'Colbd'.toUpperCase()),
+      home: WelcomeScreen(),
     );
   }
 }
