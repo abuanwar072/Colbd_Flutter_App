@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:colbd_app/model/welcome.dart';
+import 'package:colbd_app/screens/guest_screen.dart';
 import 'package:colbd_app/screens/login_screen.dart';
 import 'package:colbd_app/widgets/buttons.dart';
 import 'package:flutter/material.dart';
@@ -94,7 +95,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   SizedBox(
                     height: 10,
                   ),
-                  SecondaryButton(press: () {}, text: "Continue as guest"),
+                  SecondaryButton(
+                      press: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return GuestScreen();
+                        }));
+                      },
+                      text: "Continue as guest"),
                 ],
               ),
             )

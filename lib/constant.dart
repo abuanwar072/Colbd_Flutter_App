@@ -33,8 +33,8 @@ const kGradientButtonColorSkyblue = LinearGradient(
   begin: Alignment.topCenter,
   end: Alignment.bottomCenter,
   colors: [
-    Color(0xFFA1C4FD),
     Color(0xFFC2E9FB),
+    Color(0xFFA1C4FD),
   ],
 );
 const kGradientButtonColorPeach = LinearGradient(
