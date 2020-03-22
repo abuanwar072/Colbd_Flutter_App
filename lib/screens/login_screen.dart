@@ -1,4 +1,4 @@
-import 'package:colbd_app/screens/otp_screen.dart';
+import 'package:colbd_app/screens/password_screen.dart';
 import 'package:colbd_app/widgets/buttons.dart';
 import 'package:colbd_app/widgets/default_appbar.dart';
 import 'package:colbd_app/widgets/progress_Indicator.dart';
@@ -56,7 +56,7 @@ class LoginScreenGetId extends StatelessWidget {
                       print(_userId);
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return OtpScreen();
+                        return PaswordScreen();
                       }));
                     }
                   },

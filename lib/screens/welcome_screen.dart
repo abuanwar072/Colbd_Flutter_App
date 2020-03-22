@@ -90,7 +90,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           return LoginScreenGetId();
                         }));
                       },
-                      text: "Sign Up with colid"),
+                      text: "Sign in with colid"),
                   SizedBox(
                     height: 10,
                   ),
