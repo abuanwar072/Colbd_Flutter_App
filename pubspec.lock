@@ -64,6 +64,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.3"
+  fancy_bottom_navigation:
+    dependency: "direct dev"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: da9b40126ba27cf5a3b6f993f90cd6f2c0a516a3
+      url: "https://github.com/skquark/fancy_bottom_navigation.git"
+    source: git
+    version: "0.3.2"
   flutter:
     dependency: "direct main"
     description: flutter
