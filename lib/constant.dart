@@ -3,6 +3,14 @@ import 'package:flutter/material.dart';
 const String kAccessAccountSvg = "asstes/images/access_account.svg";
 const String kOnlineMessagingSvg = "asstes/images/online_messaging.svg";
 const String kOnlinePaymentSvg = "asstes/images/online_payments.svg";
+const String kNewConnectionSvg = "asstes/icons/new_connection.svg";
+const String kChatSvg = "asstes/icons/chat.svg";
+const String kConnectionStatusSvg = "asstes/icons/connection_status.svg";
+const String kContactSvg = "asstes/icons/contact.svg";
+const String kAboutSvg = "asstes/icons/about.svg";
+const String kMapSvg = "asstes/icons/map.svg";
+const String kOffersSvg = "asstes/icons/offers.svg";
+const String kReferenceSvg = "asstes/icons/reference.svg";
 
 const kSecondaryButtonColor = Color(0xFFE0E2E9);
 const kDefaultButtonColor = LinearGradient(
@@ -76,4 +84,11 @@ final ThemeData whiteTheme = ThemeData(
   ),
   fontFamily: "Nunito",
   // primarySwatch: Colors.blue,
+);
+
+// Shadows
+final BoxShadow kShadow = BoxShadow(
+  offset: Offset(2, 4),
+  blurRadius: 10,
+  color: kGeayTextColor.withOpacity(.5),
 );
