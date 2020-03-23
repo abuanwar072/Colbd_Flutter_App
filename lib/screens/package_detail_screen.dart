@@ -1,4 +1,5 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/screens/package_offer_screen.dart';
 import 'package:colbd_app/widgets/botton_navigation.dart';
 import 'package:colbd_app/widgets/buttons.dart';
 import 'package:colbd_app/widgets/default_appbar.dart';
@@ -59,7 +60,16 @@ class PackageDetails extends StatelessWidget {
                 ],
               ),
             ),
-            DefaultButton(press: () {}, text: "Subscribe"),
+            DefaultButton(
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return PackageOfferPage();
+                    }),
+                  );
+                },
+                text: "Subscribe"),
             SizedBox(height: 16),
             SecondaryButton(
                 press: () {
