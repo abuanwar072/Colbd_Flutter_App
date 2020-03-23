@@ -1,0 +1,35 @@
+<svg id="ticket_1_" data-name="ticket (1)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#427dfb"/>
+      <stop offset="1" stop-color="#3e58f7"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_645" data-name="Path 645" d="M140.354,167.064H96v-8.871h.887a2.661,2.661,0,0,0,0-5.322H96V144h44.354Z" transform="translate(-84.354 -127.532)" fill="url(#linear-gradient)"/>
+  <rect id="Rectangle_897" data-name="Rectangle 897" width="1" height="4" transform="translate(27.499 16.313)" fill="#fff"/>
+  <rect id="Rectangle_898" data-name="Rectangle 898" width="1" height="2" transform="translate(27.499 21.396)" fill="#fff"/>
+  <rect id="Rectangle_899" data-name="Rectangle 899" width="1" height="2" transform="translate(27.499 25.471)" fill="#fff"/>
+  <rect id="Rectangle_900" data-name="Rectangle 900" width="1" height="2" transform="translate(27.499 28.528)" fill="#fff"/>
+  <rect id="Rectangle_901" data-name="Rectangle 901" width="1" height="2" transform="translate(27.499 32.604)" fill="#fff"/>
+  <rect id="Rectangle_902" data-name="Rectangle 902" width="1" height="4" transform="translate(27.499 35.686)" fill="#fff"/>
+  <rect id="Rectangle_903" data-name="Rectangle 903" width="2" height="1" transform="translate(15.282 20.37)" fill="#fff"/>
+  <rect id="Rectangle_904" data-name="Rectangle 904" width="1" height="1" transform="translate(19.351 20.37)" fill="#fff"/>
+  <rect id="Rectangle_905" data-name="Rectangle 905" width="2" height="1" transform="translate(22.414 20.37)" fill="#fff"/>
+  <rect id="Rectangle_906" data-name="Rectangle 906" width="1" height="1" transform="translate(43.796 34.629)" fill="#fff"/>
+  <rect id="Rectangle_907" data-name="Rectangle 907" width="2" height="1" transform="translate(39.735 34.629)" fill="#fff"/>
+  <rect id="Rectangle_908" data-name="Rectangle 908" width="2" height="1" transform="translate(47 34.629)" fill="#fff"/>
+  <rect id="Rectangle_909" data-name="Rectangle 909" width="1" height="1" transform="translate(51 34.629)" fill="#fff"/>
+  <rect id="Rectangle_910" data-name="Rectangle 910" width="7" height="2" transform="translate(18.374 23.433)" fill="#fff"/>
+  <rect id="Rectangle_911" data-name="Rectangle 911" width="7" height="2" transform="translate(18.374 30.565)" fill="#fff"/>
+  <rect id="Rectangle_912" data-name="Rectangle 912" width="7" height="1" transform="translate(18.374 27.5)" fill="#fff"/>
+  <rect id="Rectangle_913" data-name="Rectangle 913" width="9" height="2" transform="translate(43 21.396)" fill="#fff"/>
+  <rect id="Rectangle_914" data-name="Rectangle 914" width="10" height="2" transform="translate(30.666 21.396)" fill="#fff"/>
+  <rect id="Rectangle_915" data-name="Rectangle 915" width="21" height="2" transform="translate(31 25.471)" fill="#fff"/>
+  <rect id="Rectangle_916" data-name="Rectangle 916" width="21" height="2" transform="translate(31 28.528)" fill="#fff"/>
+  <path id="Path_646" data-name="Path 646" d="M30.161,46.968H1.774V8.129H30.161v8.129h1.774V4.516A4.481,4.481,0,0,0,27.5,0H4.435A4.481,4.481,0,0,0,0,4.516V51.484A4.481,4.481,0,0,0,4.435,56H27.5a4.481,4.481,0,0,0,4.435-4.516V39.742H30.161ZM4.435,1.806H27.5a2.689,2.689,0,0,1,2.661,2.71V6.323H1.774V4.516A2.689,2.689,0,0,1,4.435,1.806ZM27.5,54.194H4.435a2.689,2.689,0,0,1-2.661-2.71v-2.71H30.161v2.71A2.689,2.689,0,0,1,27.5,54.194Z"/>
+  <rect id="Rectangle_917" data-name="Rectangle 917" width="8" height="1" transform="translate(12.254 51)"/>
+  <rect id="Rectangle_918" data-name="Rectangle 918" width="1" height="2" transform="translate(3.999 10.188)"/>
+  <rect id="Rectangle_919" data-name="Rectangle 919" width="1" height="31" transform="translate(3.999 13.541)"/>
+  <rect id="Rectangle_920" data-name="Rectangle 920" width="7" height="1" transform="translate(18.374 34.629)" fill="#fff"/>
+  <rect id="Rectangle_921" data-name="Rectangle 921" width="2" height="1" transform="translate(14.263 34.629)" fill="#fff"/>
+</svg>

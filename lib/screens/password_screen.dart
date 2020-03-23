@@ -1,4 +1,5 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/screens/main_screen.dart';
 import 'package:colbd_app/widgets/buttons.dart';
 import 'package:colbd_app/widgets/default_appbar.dart';
 import 'package:colbd_app/widgets/progress_Indicator.dart';
@@ -55,10 +56,10 @@ class PaswordScreen extends StatelessWidget {
                     press: () {
                       if (_formKey.currentState.validate()) {
                         // print(_userId);
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (context) {
-                        //   return PaswordScreen();
-                        // }));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return MainScreen();
+                        }));
                       }
                     },
                     text: "login")),

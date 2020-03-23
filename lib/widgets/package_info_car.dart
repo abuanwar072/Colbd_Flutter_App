@@ -1,5 +1,6 @@
 import 'package:colbd_app/constant.dart';
-import 'package:colbd_app/widgets/buttons.dart';
+import 'package:colbd_app/ui/sizing_information.dart';
+import 'package:colbd_app/ui/ui_utils.dart';
 import 'package:flutter/material.dart';
 
 class PackageInfoCard extends StatelessWidget {
@@ -18,17 +19,17 @@ class PackageInfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // var mediaQuery = MediaQuery.of(context);
+    var mediaQuery = MediaQuery.of(context);
     return LayoutBuilder(builder: (context, boxSizing) {
-      // var sizingInformation = SizingInformation(
-      //   orientation: mediaQuery.orientation,
-      //   deviceType: getDeviceType(mediaQuery),
-      //   screenSize: mediaQuery.size,
-      //   localWidgetSize: Size(boxSizing.maxWidth, boxSizing.maxHeight),
-      // );
+      var sizingInformation = SizingInformation(
+        orientation: mediaQuery.orientation,
+        deviceType: getDeviceType(mediaQuery),
+        screenSize: mediaQuery.size,
+        localWidgetSize: Size(boxSizing.maxWidth, boxSizing.maxHeight),
+      );
 
       return Container(
-        height: 110,
+        height: sizingInformation.localWidgetSize.width * .26,
         margin: EdgeInsets.only(bottom: 16),
         decoration: BoxDecoration(
           color: kWhiteColor,
@@ -44,7 +45,6 @@ class PackageInfoCard extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Expanded(
-              flex: 4,
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 // height: 100,
@@ -64,41 +64,56 @@ class PackageInfoCard extends StatelessWidget {
                             color: kGeayTextColor,
                           ),
                     ),
-                    SecondaryButton(press: press, text: "Details")
+                    // SecondaryButton(press: press, text: "Details")
+                    Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        onTap: press,
+                        child: Container(
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 25, vertical: 5),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: kSecondaryButtonColor,
+                          ),
+                          child: Text("Details".toUpperCase()),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
             ),
-            Expanded(
-              flex: 2,
-              child: Container(
-                padding: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  gradient: kDefaultButtonColor,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(20),
-                    bottomRight: Radius.circular(20),
-                    bottomLeft: Radius.circular(25),
+            Container(
+              width: sizingInformation.localWidgetSize.width * .3,
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                gradient: kDefaultButtonColor,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
+                  bottomLeft: Radius.circular(25),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "$speed",
+                    style: Theme.of(context).textTheme.display3.copyWith(
+                        color: kWhiteColor,
+                        fontWeight: FontWeight.bold,
+                        height: 1),
                   ),
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text(
-                      "$speed",
-                      style: Theme.of(context).textTheme.display2.copyWith(
-                            color: kWhiteColor,
-                            fontWeight: FontWeight.bold,
-                          ),
-                    ),
-                    Text(
-                      "Mpbs",
-                      style: Theme.of(context).textTheme.subhead.copyWith(
+                  Text(
+                    "Mpbs",
+                    style: Theme.of(context).textTheme.subhead.copyWith(
                           fontWeight: FontWeight.bold,
-                          color: kWhiteColor.withOpacity(0.6)),
-                    ),
-                  ],
-                ),
+                          height: .8,
+                          color: kWhiteColor.withOpacity(0.6),
+                        ),
+                  ),
+                ],
               ),
             )
           ],

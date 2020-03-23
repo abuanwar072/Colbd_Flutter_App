@@ -1,4 +1,5 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/screens/package_list_screen.dart';
 import 'package:colbd_app/widgets/botton_navigation.dart';
 import 'package:colbd_app/widgets/package_small_card.dart';
 import 'package:colbd_app/widgets/shortcut_card.dart';
@@ -13,7 +14,6 @@ class GuestScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
         child: ListView(
-          // crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
               "Packages".toUpperCase(),
@@ -35,13 +35,19 @@ class GuestScreen extends StatelessWidget {
                       press: () {},
                       speed: "15",
                       price: "950",
-                      gradientColor: kGradientButtonColorBlue,
+                      gradientColor: kGradientButtonColorPeach,
                     ),
                     PackageSmallCard(
                       press: () {},
                       speed: "20",
                       price: "1250",
                       gradientColor: kGradientButtonColorSkyblue,
+                    ),
+                    PackageSmallCard(
+                      press: () {},
+                      speed: "25",
+                      price: "1500",
+                      gradientColor: kGradientButtonColorBlue,
                     ),
                   ],
                 ),
@@ -66,7 +72,16 @@ class GuestScreen extends StatelessWidget {
                 direction: Axis.horizontal,
                 children: <Widget>[
                   ShortcutCard(
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return PackageList();
+                          },
+                        ),
+                      );
+                    },
                     icon: kNewConnectionSvg,
                     text: "New Connection",
                   ),

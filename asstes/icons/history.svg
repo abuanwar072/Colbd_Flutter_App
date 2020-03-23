@@ -1,0 +1,20 @@
+<svg id="report" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#427dfb"/>
+      <stop offset="1" stop-color="#3e58f7"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_201" data-name="Group 201" transform="translate(12.362 11.076)">
+    <path id="Path_600" data-name="Path 600" d="M134,120.5H112V104h22Z" transform="translate(-112 -104)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_868" data-name="Rectangle 868" width="5" height="7" transform="translate(29.007 36.924)" fill="url(#linear-gradient)"/>
+  </g>
+  <rect id="Rectangle_869" data-name="Rectangle 869" width="22" height="2" transform="translate(12.532 30.369)"/>
+  <rect id="Rectangle_870" data-name="Rectangle 870" width="22" height="2" transform="translate(12.532 34.307)"/>
+  <rect id="Rectangle_871" data-name="Rectangle 871" width="22" height="2" transform="translate(12.532 41.2)"/>
+  <rect id="Rectangle_872" data-name="Rectangle 872" width="10" height="1" transform="translate(24.396 38.256)"/>
+  <rect id="Rectangle_873" data-name="Rectangle 873" width="10" height="1" transform="translate(12.611 38.256)"/>
+  <path id="Path_601" data-name="Path 601" d="M51.484,46.968H41.548V45.161H39.742v1.806h-18.3l-7.9,4.516,4.742,2.71H8.129V48.774a2.71,2.71,0,0,0,0-5.419V38.839a2.71,2.71,0,1,0,0-5.419V28.9a2.71,2.71,0,1,0,0-5.419V18.968a2.71,2.71,0,1,0,0-5.419V9.032H39.742V43.355h1.806V7.226h-.9a2.71,2.71,0,1,1,0-5.419V0H4.516A4.521,4.521,0,0,0,0,4.516V51.484A4.521,4.521,0,0,0,4.516,56H51.484a4.516,4.516,0,1,0,0-9.032Zm-42.452-.9a.9.9,0,0,1-.9.9H1.806V45.161H8.129A.9.9,0,0,1,9.032,46.065Zm-2.71-2.71H1.806V38.839H6.323Zm2.71-7.226a.9.9,0,0,1-.9.9H1.806V35.226H8.129A.9.9,0,0,1,9.032,36.129Zm-2.71-2.71H1.806V28.9H6.323Zm2.71-7.226a.9.9,0,0,1-.9.9H1.806V25.29H8.129A.9.9,0,0,1,9.032,26.194Zm-2.71-2.71H1.806V18.968H6.323Zm2.71-7.226a.9.9,0,0,1-.9.9H1.806V15.355H8.129A.9.9,0,0,1,9.032,16.258Zm-2.71-2.71H1.806V8.106a4.469,4.469,0,0,0,2.71.927H6.323ZM4.516,1.806H37.034a4.509,4.509,0,0,0,0,5.419H4.516a2.71,2.71,0,0,1,0-5.419Zm0,52.387a2.713,2.713,0,0,1-2.71-2.71v-2.71H6.323v5.419Zm16.258-4.766v4.113l-3.6-2.057Zm30.71,4.766h-28.9V48.774h28.9a2.71,2.71,0,1,1,0,5.419Z"/>
+  <rect id="Rectangle_874" data-name="Rectangle 874" width="26" height="2" transform="translate(4.842 3.842)"/>
+  <rect id="Rectangle_875" data-name="Rectangle 875" width="2" height="2" transform="translate(32.338 3.842)"/>
+</svg>
