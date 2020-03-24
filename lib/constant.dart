@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+const EdgeInsets kPading = EdgeInsets.only(left: 16, top: 16, right: 16);
+const SizedBox kHight = SizedBox(height: 16);
+const SizedBox kHightSmall = SizedBox(height: 8);
+
 // All Svg files here
 const String kAccessAccountSvg = "asstes/images/access_account.svg";
 const String kOnlineMessagingSvg = "asstes/images/online_messaging.svg";

@@ -1,4 +1,5 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/screens/new_connection_from_screen.dart';
 import 'package:colbd_app/widgets/botton_navigation.dart';
 import 'package:colbd_app/widgets/default_appbar.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,12 @@ class PackageOfferPage extends StatelessWidget {
                   OfferCard(
                     month: 2,
                     price: 1000,
-                    press: () {},
+                    press: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return NewConncetionFormScreen();
+                      }));
+                    },
                   ),
                   OfferCard(
                     month: 3,
