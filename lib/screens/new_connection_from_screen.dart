@@ -1,3 +1,4 @@
+import 'package:colbd_app/screens/otp_screen.dart';
 import 'package:colbd_app/widgets/botton_navigation.dart';
 import 'package:colbd_app/widgets/buttons.dart';
 import 'package:colbd_app/widgets/default_appbar.dart';
@@ -17,13 +18,13 @@ class NewConncetionFormScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String _firstName;
-    String _lastName;
-    String _email;
-    int _pnNumber;
-    String _distic;
-    String _thana;
-    String _address;
+    // String _firstName;
+    // String _lastName;
+    // String _email;
+    // int _pnNumber;
+    // String _distic;
+    // String _thana;
+    // String _address;
 
     _fieldFocusChange(
         BuildContext context, FocusNode currentFocus, FocusNode nextFocus) {
@@ -51,7 +52,7 @@ class NewConncetionFormScreen extends StatelessWidget {
                   children: <Widget>[
                     TextFormField(
                       onChanged: (value) {
-                        _firstName = value;
+                        // _firstName = value;
                       },
                       focusNode: _firstNameFocusNode,
                       onFieldSubmitted: (term) {
@@ -73,7 +74,7 @@ class NewConncetionFormScreen extends StatelessWidget {
                     kHightSmall,
                     TextFormField(
                       onChanged: (value) {
-                        _lastName = value;
+                        // _lastName = value;
                       },
                       focusNode: _lastNameFocusNode,
                       onFieldSubmitted: (term) {
@@ -95,7 +96,7 @@ class NewConncetionFormScreen extends StatelessWidget {
                     TextFormField(
                       keyboardType: TextInputType.phone,
                       onChanged: (value) {
-                        _firstName = value;
+                        // _firstName = value;
                       },
                       focusNode: _pnFocusNode,
                       onFieldSubmitted: (term) {
@@ -117,7 +118,7 @@ class NewConncetionFormScreen extends StatelessWidget {
                     TextFormField(
                       keyboardType: TextInputType.emailAddress,
                       onChanged: (value) {
-                        _email = value;
+                        // _email = value;
                       },
                       focusNode: _emailFocusNode,
                       onFieldSubmitted: (term) {
@@ -139,7 +140,7 @@ class NewConncetionFormScreen extends StatelessWidget {
                     kHightSmall,
                     TextFormField(
                       onChanged: (value) {
-                        _lastName = value;
+                        // _lastName = value;
                       },
                       focusNode: _disticFocusNode,
                       onFieldSubmitted: (term) {
@@ -160,7 +161,7 @@ class NewConncetionFormScreen extends StatelessWidget {
                     kHightSmall,
                     TextFormField(
                       onChanged: (value) {
-                        _lastName = value;
+                        // _lastName = value;
                       },
                       focusNode: _thanaFocusNode,
                       onFieldSubmitted: (term) {
@@ -181,7 +182,7 @@ class NewConncetionFormScreen extends StatelessWidget {
                     kHightSmall,
                     TextFormField(
                       onChanged: (value) {
-                        _lastName = value;
+                        // _lastName = value;
                       },
                       focusNode: _addressFocusNode,
                       textInputAction: TextInputAction.done,
@@ -199,7 +200,14 @@ class NewConncetionFormScreen extends StatelessWidget {
                     kHight,
                     kHightSmall,
                     GradientIconButton(
-                      press: () {},
+                      press: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) {
+                            return OtpScreen();
+                          }),
+                        );
+                      },
                       text: "Next",
                     )
                   ],

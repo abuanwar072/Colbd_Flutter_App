@@ -1,5 +1,7 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/screens/about_us_screen.dart';
 import 'package:colbd_app/screens/contact_us_screen.dart';
+import 'package:colbd_app/screens/create_refer_screen.dart';
 import 'package:colbd_app/screens/package_list_screen.dart';
 import 'package:colbd_app/widgets/botton_navigation.dart';
 import 'package:colbd_app/widgets/package_small_card.dart';
@@ -97,7 +99,12 @@ class GuestScreen extends StatelessWidget {
                     text: "Live Chat",
                   ),
                   ShortcutCard(
-                    press: () {},
+                    press: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CreateReference();
+                      }));
+                    },
                     icon: kReferenceSvg,
                     text: "Refer & Earn",
                   ),
@@ -112,7 +119,12 @@ class GuestScreen extends StatelessWidget {
                     text: "Contact Us",
                   ),
                   ShortcutCard(
-                    press: () {},
+                    press: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return AboutUsScreen();
+                      }));
+                    },
                     icon: kAboutSvg,
                     text: "About Us",
                   ),
