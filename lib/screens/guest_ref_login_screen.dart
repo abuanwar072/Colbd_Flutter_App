@@ -1,4 +1,5 @@
 import 'package:colbd_app/constant.dart';
+import 'package:colbd_app/screens/refer_screen.dart';
 import 'package:colbd_app/widgets/botton_navigation.dart';
 import 'package:colbd_app/widgets/buttons.dart';
 import 'package:colbd_app/widgets/default_appbar.dart';
@@ -44,7 +45,15 @@ class GuestReferenceLogin extends StatelessWidget {
               ),
             ),
             SizedBox(height: MediaQuery.of(context).size.height * .1),
-            Center(child: GradientIconButton(press: () {}, text: "Next"))
+            Center(
+                child: GradientIconButton(
+                    press: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return ReferScreen();
+                      }));
+                    },
+                    text: "Next"))
           ],
         ),
       ),
